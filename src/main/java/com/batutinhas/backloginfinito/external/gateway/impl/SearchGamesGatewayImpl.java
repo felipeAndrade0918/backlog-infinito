@@ -14,6 +14,6 @@ public class SearchGamesGatewayImpl implements SearchGamesGateway {
 
     @Override
     public SearchResponse searchGames(String query) {
-        return giantBombClient.search(query);
+        return giantBombClient.searchGames(query);
     }
 }

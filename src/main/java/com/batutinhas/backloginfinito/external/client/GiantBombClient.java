@@ -11,5 +11,5 @@ public interface GiantBombClient {
 
     @GetMapping(value = "/search?api_key=${api.key}&format=json&resources=game",
             headers = {"User-Agent=BacklogInfinitoAPI"})
-    SearchResponse search(@RequestParam String query);
+    SearchResponse searchGames(@RequestParam String query);
 }
